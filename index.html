@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+    <header>
+        
+        <h1> Welcome to the Coding Quiz!</h1>
+        
+    </header>
+<body>
+     <!-------------- WELCOME SCREEN --------------->
+  <div class='screen' id='welcome-screen'>
+    <h1>Are you ready to put your knowledge of coding to the test?</h1>
+    <p> The following quiz is timed. Try to answer the following questions on coding fundamentals. You will have approximately 2 minutes to answer the following questions. Which are multiple choice. If you answer incorrectly time will be deducted from the clock. Press the <strong>Start</strong> button to begin. Good Luck! (^_^)> </p>
+<br>
+    <button class="start-btn">Start</button>
+  </div>
+
+ <!-------------- QUESTION SCREEN --------------->
+<div class='screen' id='question-screen'>
+    <div id="timer-text">Time: <div id="timer">-</div>Seconds</div>
+    <h1 id="question">""</h1>
+    <div id="answer-set">
+      <button class="answer-btn" id="correctAnswer">Correct Answer</button>
+      <button class="answer-btn" id="incorrectAnswer1">Wrong Answer</button>
+      <button class="answer-btn" id="incorrectAnswer2">Wrong Answer</button>
+      <button class="answer-btn" id="incorrectAnswer3">Wrong Answer</button>
+    </div>
+    <h1 id="feedback">Feedback will go here.</h1>
+  </div>
+
+  <!-------------- THANK YOU SCREEN --------------->
+  <div class='screen' id='thankyou-screen'>
+    <h1>GAME OVER!</h1>
+    <h4 id='game-results'>Looks like you did pretty well.</h4>
+    <button class="start-btn">Restart</button>
+  </div>
+  
+<!-- My Own Javascript Script Code -->
+  <script src="./assets/js/script.js"></script>
+  
+  <!-- JS Libraries -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/idewcomputing/code-trivia/src/trivia.js"></script> <!-- iDEW trivia -->
+     
+</body>
+</html>
